@@ -9,8 +9,8 @@ var col = 20;
 var col2 = 10;
 //tamaños 
 function setup() {
-  createCanvas(1700, 1100);
-  frameRate(4);
+  createCanvas(windowWidth,windowHeight);
+  frameRate(355);
   background(0);
 }
 
@@ -161,11 +161,5 @@ function draw() {
     ellipse(220 * width / 335, 80 * height / 220, 2 * width / 335, 2 * height / 220);
   }
 
-  //if (frameCount <= 1636){
-  //if (frameCount % 8 == 0){
-  //saveCanvas ("elflipbookk" + frameCount, 'jpg');
-  //}
-  //}
 
-  print(frameCount);
 }
