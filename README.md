@@ -1,2 +1,7 @@
-# mediosInteractivos
-Ejercicios de la clase diseño en medios interactivos
+# Meios Interactivos
+Indice de los ejercicios de la clase de Daniela Morales
+1. [Forma y color](https://danielamoralesb.github.io/mediosInteractivos/01)
+2. [Repetición](https://danielamoralesb.github.io/mediosInteractivos/02.1)
+3. [Repetición Correccion](https://danielamoralesb.github.io/mediosInteractivos/02)
+4. [Flipbook](https://danielamoralesb.github.io/mediosInteractivos/03)
+5. [Herramientas de dibujo](https://danielamoralesb.github.io/mediosInteractivos/04)
