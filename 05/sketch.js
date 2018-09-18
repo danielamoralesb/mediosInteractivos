@@ -1,6 +1,10 @@
 var miDia;
 var miMes;
+var miSegundo
+var miSegundomodificado;
+var miSegundomodificado2;
 var miDiamodificado;
+var miDiamodificado2;
 var miMesmodificado;
 var col = 205;
 var miAngulo = 0;
@@ -10,6 +14,9 @@ var miAngulo = 0;
 //psicologica, para esto hice 
 //muchos carros en una ciudad que se mueven muy lentamente y se cruzan,
 //ya que solo cambian de posicion una vez cada dia por dos meses
+//a diferencia de los barcos, que como no hay trancon, cambian
+//muy rapido cada segundo
+
 function setup() {
   createCanvas(400, 400);
   angleMode(DEGREES);
@@ -19,14 +26,17 @@ function draw() {
   //tiempo modificado
   miDia = day();
   miMes = month();
+  miSegundo = second();
   miDiamodificado = map(miDia, 0, 31, 155, 325);
   miDiamodificado2 = map(miDia, 0, 31, 325, 155);
+  miSegundomodificado = map(miSegundo, 0, 59, 155, 325);
+  miSegundomodificado2 = map(miSegundo, 0, 59, 325, 155);
 
   //cambio background 
   background(83, col, 242);
-  col = col - 0.005;
+  col = col - 0.01;
 
-  //sol 
+  //sol-luna
   push();
   translate(width / 2, height / 2);
   rotate(miAngulo);
@@ -55,7 +65,8 @@ function draw() {
   line(245, 200, 245, 280);
   strokeWeight(0.8);
 
-  //los carros y los barcos cambia de posicion cada dia por dos meses 
+  //los carros posicion cada dia por dos meses 
+  //los barcos camnbian de posicion cada segundo (rapido)
   // carros
   beginShape();
   fill(195, 185, 0);
@@ -124,38 +135,38 @@ function draw() {
   //barcos
   beginShape();
   fill(230, 115, 0);
-  rect(miDiamodificado, 375, 15, 9);
+  rect(miSegundomodificado, 375, 15, 9);
   stroke(0);
-  line(miDiamodificado, 375, miDiamodificado, 365);
+  line(miSegundomodificado, 375, miSegundomodificado, 365);
   fill(0, 179, 149);
-  triangle(miDiamodificado, 365, miDiamodificado, 355, miDiamodificado + 7, 360);
+  triangle(miSegundomodificado, 365, miSegundomodificado, 355, miSegundomodificado + 7, 360);
   endShape();
 
   beginShape();
   fill(0, 179, 149);
-  rect(miDiamodificado2, 375, 15, 9);
+  rect(miSegundomodificado2, 375, 15, 9);
   stroke(0);
-  line(miDiamodificado2 + 15, 375, miDiamodificado2 + 15, 365);
+  line(miSegundomodificado2 + 15, 375, miSegundomodificado2 + 15, 365);
   fill(230, 115, 0);
-  triangle(miDiamodificado2 + 15, 365, miDiamodificado2 + 15, 355, miDiamodificado2 + 7, 360);
+  triangle(miSegundomodificado2 + 15, 365, miSegundomodificado2 + 15, 355, miSegundomodificado2 + 7, 360);
   endShape();
 
   beginShape();
   fill(0, 179, 149);
-  rect(miDiamodificado + 40, 375, 15, 9);
+  rect(miSegundomodificado + 40, 375, 15, 9);
   stroke(0);
-  line(miDiamodificado + 40, 375, miDiamodificado + 40, 365);
+  line(miSegundomodificado + 40, 375, miSegundomodificado + 40, 365);
   fill(230, 115, 0);
-  triangle(miDiamodificado + 40, 365, miDiamodificado + 40, 355, miDiamodificado + 47, 360);
+  triangle(miSegundomodificado + 40, 365, miSegundomodificado + 40, 355, miSegundomodificado + 47, 360);
   endShape();
 
   beginShape();
   fill(230, 115, 0);
-  rect(miDiamodificado2 - 40, 375, 15, 9);
+  rect(miSegundomodificado2 - 40, 375, 15, 9);
   stroke(0);
-  line(miDiamodificado2 - 25, 375, miDiamodificado2 - 25, 365);
+  line(miSegundomodificado2 - 25, 375, miSegundomodificado2 - 25, 365);
   fill(0, 179, 149);
-  triangle(miDiamodificado2 - 25, 365, miDiamodificado2 - 24, 355, miDiamodificado2 - 33, 360);
+  triangle(miSegundomodificado2 - 25, 365, miSegundomodificado2 - 24, 355, miSegundomodificado2 - 33, 360);
   endShape();
 
   //dibujo ciudad (los edificios no cambian)
@@ -188,6 +199,7 @@ function draw() {
   //cuarto edificio
   fill(64, 64, 64);
   quad(340, 240, 400, 240, 400, 400, 340, 400);
+  quad(340, 240, 350, 230, 400, 230, 400, 240)
   fill(204, 238, 255);
   rect(345, 250, 10, 80);
   rect(360, 250, 10, 80);
