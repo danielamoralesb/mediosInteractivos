@@ -6,3 +6,4 @@ Indice de los ejercicios de la clase de Daniela Morales
 4. [Flipbook](https://danielamoralesb.github.io/mediosInteractivos/03)
 5. [Herramientas de dibujo](https://danielamoralesb.github.io/mediosInteractivos/04)
 6. [Reloj](https://danielamoralesb.github.io/mediosInteractivos/05)
+7. [Fotos reloj](https://danielamoralesb.github.io/mediosInteractivos/05.Fotos)
