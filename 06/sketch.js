@@ -46,6 +46,8 @@ function draw() {
   // el volumen sube con el mouse y baja con el mouse
   var miVol = map(mouseY, 400, 0, 0, 1);
   miCancion.setVolume(miVol);
+  
+  miCancion.rate(1.5)
 
   //para que el efecto de sonido se oiga mas de un lado que de 
   // el otro
