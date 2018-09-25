@@ -11,7 +11,7 @@ var nivel
 function preload() {
   miFotico = loadImage('assets/fotto.jpg');
   miFoto = loadImage('assets/foto.jpg');
-  miFotoo = loadImage('assets/foto.jpg');
+  miFotoo = loadImage('assets/fotoo.jpg');
   miFooto = loadImage('assets/footo.jpg');
   miFfoto = loadImage('assets/ffoto.jpg');
   //cancion violent crimes de Kanye West
