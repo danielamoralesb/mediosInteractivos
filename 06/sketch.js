@@ -27,11 +27,19 @@ function setup() {
 
 
   background(255);
-
 }
+
+
 //primera foto
 function draw() {
+
   image(miFotico, 0, 0, width, height);
+  fill(0)
+  stroke(0)
+  strokeWeight(0.5)
+  textFont("Shadows Into Light");
+  textSize(15);
+  text("manten oprimido para ver el video", 15, 15)
 
   //Suena la musica cuando el mouse esta presionado, cuando se
   //suelta queda en pausa
@@ -46,8 +54,8 @@ function draw() {
   // el volumen sube con el mouse y baja con el mouse
   var miVol = map(mouseY, 400, 0, 0, 1);
   miCancion.setVolume(miVol);
-  
-  miCancion.rate(1.5)
+
+  miCancion.rate(1.2)
 
   //para que el efecto de sonido se oiga mas de un lado que de 
   // el otro
@@ -330,6 +338,7 @@ function draw() {
       textSize(20);
       text("Kanye West", 200, 300)
     }
+
 
   }
 }
