@@ -68,7 +68,7 @@ function draw() {
     //aumenta el tamaño dependiendo de los clics por minuto
     tamm += vel / 400;
 
-  } else if (tam > 10) { //si la velocidad es menor a 200 y el tamaño es mayor a 10
+  } else if (tamm > 10) { //si la velocidad es menor a 200 y el tamaño es mayor a 10
 
     //disminuye el tamaño
     tamm -= 3;
@@ -84,7 +84,7 @@ function draw() {
   textFont("Gloria Hallelujah");
   textSize(15);
   fill(255, 0, 0)
-  image(miLeopardo, 300, 350, tamm, tamm)
+  
 
   //primera escena
   //empieza con las jirafas caminando y las avestruces por todas partes
@@ -115,9 +115,11 @@ function draw() {
     image(miJirafa, miSegundomodificado + 49, 170, 160, 200);
     // las avestruces y las zebras son muchas
     //pero se mueren por que las caza el leon
+    image(miLeopardo, 200, 300, tamm, tamm)
     image(miLeon, x - tamx / 2, y - tamy / 2, tam, tam)
-    text("haz clic rápido para que el leopardo no crezca", 15, 15)
+    text("haz clic rápido para que el leopardo crezca", 15, 15)
     text("si mueves al león se come a las avestruces y zebras", 45, 50)
+    
 
 
 
