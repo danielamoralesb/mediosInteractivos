@@ -9,6 +9,3 @@ Indice de los ejercicios de la clase de Daniela Morales
 7. [Fotos reloj](https://danielamoralesb.github.io/mediosInteractivos/05.Fotos.zip)
 8. [Video Musical](https://danielamoralesb.github.io/mediosInteractivos/06) 
 9.[Ecosistema2](https://danielamoralesb.github.io/mediosInteractivos/08)
-10. [Juego1](https://danielamoralesb.github.io/mediosInteractivos/09)
-11. [juego2](https://danielamoralesb.github.io/mediosInteractivos/011)
-12. [juegoo](https://danielamoralesb.github.io/mediosInteractivos/12.1)
