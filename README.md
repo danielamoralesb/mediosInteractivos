@@ -11,4 +11,4 @@ Indice de los ejercicios de la clase de Daniela Morales
 9.[Ecosistema2](https://danielamoralesb.github.io/mediosInteractivos/08)
 10. [Juego1](https://danielamoralesb.github.io/mediosInteractivos/09)
 11. [juego2](https://danielamoralesb.github.io/mediosInteractivos/011)
-12. [juegoo](https://danielamoralesb.github.io/mediosInteractivos/videojuego)
+12. [juegoo](https://danielamoralesb.github.io/mediosInteractivos/12)
