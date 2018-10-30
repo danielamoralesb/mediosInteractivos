@@ -9,4 +9,5 @@ Indice de los ejercicios de la clase de Daniela Morales
 7. [Fotos reloj](https://danielamoralesb.github.io/mediosInteractivos/05.Fotos.zip)
 8. [Video Musical](https://danielamoralesb.github.io/mediosInteractivos/06) 
 9.[Ecosistema2](https://danielamoralesb.github.io/mediosInteractivos/08)
-10.[Juego Avance 30/oct](https://editor.p5js.org/danielamorales/full/r1hDea5sm)
+10.[Juego Avance 30/oct scetch](https://editor.p5js.org/danielamorales/sketches/r1hDea5sm)
+10.1.[Juego Avance 30/oct fullscreen](https://editor.p5js.org/danielamorales/full/r1hDea5sm)
