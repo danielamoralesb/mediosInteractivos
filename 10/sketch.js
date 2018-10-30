@@ -35,12 +35,11 @@ function preload() {
   mioso = loadImage('assets/personaje.png')
   fondoinicio = loadImage('assets/intro.jpg')
   fondo0 = loadImage('assets/00.jpg')
-  miCancion = loadSound('assets/Cancion.mp3');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  x = 0
+  x = 20
   y = 450
   tam = 60
   zanaa = new carrot(230, 150)
@@ -52,22 +51,14 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed == true) {
-    if (miCancion.isPlaying() == false) {
-      miCancion.play();
-    }
-  } else {
-    miCancion.pause();
-  }
   if (estado == 0) {
     image(fondo0, 0, 0, width, height)
   }
   if (estado == 1) {
-    image(fondoinicio, 0, 0, width, height)
-    image(mioso, 200, 10, 200, 250)
+    background(255)
     textFont("Shadows Into Light");
     textSize(100)
-    text("carrot skip", 100, 440)
+    text("carrot skip", 120 * width / 700, 275 * height / 550)
 
   }
 
@@ -88,20 +79,20 @@ function draw() {
     line(650 * width / 700, 100 * height / 550, 30 * width / 700, 100 * height / 550)
     zanaa.dibujarse()
     zanaa.moverse()
-    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 5) {
+    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 10) {
       estado = 9
     }
 
     for (var i = 0; i < miEjercito.length; i = i + 1) {
       miEjercito[i].dibujarse()
       miEjercito[i].moverse()
-      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 5) {
+      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 10) {
         estado = 9
       }
     }
     image(mihamburguesa, 20 * width / 700, 75 * height / 550, 50, 50)
-    image(mioso, x * width / 700, y * height / 550, tam, tam)
-    if (dist(mouseX, mouseY, 30 * width / 700, 100 * height / 550) < 5) {
+    image(mioso, x - 60 / 2 * width / 700, y - 60 / 2 * height / 550, tam, tam)
+    if (dist(mouseX, mouseY, 30 * width / 700, 100 * height / 550) < 20) {
       estado = 4
     }
   }
@@ -121,21 +112,21 @@ function draw() {
 
     zanaa.dibujarse()
     zanaa.moverse()
-    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 5) {
+    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 10) {
       estado = 9
     }
 
     for (var i = 0; i < miEjercito.length; i = i + 1) {
       miEjercito[i].dibujarse()
       miEjercito[i].moverse()
-      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 5) {
+      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 10) {
         estado = 9
       }
     }
 
     image(mipizza, 430 * width / 700, 275 * height / 550, 50, 50)
-    image(mioso, x * width / 700, y * height / 550, tam, tam)
-    if (dist(mouseX, mouseY, 430 * width / 700, 275 * height / 550) < 5) {
+    image(mioso, x - 60 / 2 * width / 700, y - 60 / 2 * height / 550, tam, tam)
+    if (dist(mouseX, mouseY, 430 * width / 700, 275 * height / 550) < 20) {
       estado = 5
     }
   }
@@ -163,20 +154,20 @@ function draw() {
     line(50 * width / 700, 400 * height / 550, 50 * width / 700, 130 * height / 550)
     zanaa.dibujarse()
     zanaa.moverse()
-    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 5) {
+    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 10) {
       estado = 9
     }
 
     for (var i = 0; i < miEjercito.length; i = i + 1) {
       miEjercito[i].dibujarse()
       miEjercito[i].moverse()
-      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 5) {
+      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 10) {
         estado = 9
       }
     }
     image(mispapas, 25 * width / 700, 120 * height / 550, 50, 50)
-    image(mioso, x * width / 700, y * height / 550, tam, tam)
-    if (dist(mouseX, mouseY, 25 * width / 700, 120 * height / 550) < 5) {
+    image(mioso, x - 60 / 2 * width / 700, y - 60 / 2 * height / 550, tam, tam)
+    if (dist(mouseX, mouseY, 25 * width / 700, 120 * height / 550) < 20) {
       estado = 6
     }
   }
@@ -204,20 +195,20 @@ function draw() {
     line(590 * width / 700, 530 * height / 550, 680 * width / 700, 530 * height / 550)
     zanaa.dibujarse()
     zanaa.moverse()
-    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 5) {
+    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 10) {
       estado = 9
     }
 
     for (var i = 0; i < miEjercito.length; i = i + 1) {
       miEjercito[i].dibujarse()
       miEjercito[i].moverse()
-      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 5) {
+      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 10) {
         estado = 9
       }
     }
     image(mimalteada, 630 * width / 700, 490 * height / 550, 80, 100)
-    image(mioso, x * width / 700, y * height / 550, tam, tam)
-    if (dist(mouseX, mouseY, 610 * width / 700, 480 * height / 550) < 5) {
+    image(mioso, x - 60 / 2 * width / 700, y - 60 / 2 * height / 550, tam, tam)
+    if (dist(mouseX, mouseY, 630 * width / 700, 490 * height / 550) < 20) {
       estado = 7
     }
   }
@@ -240,20 +231,20 @@ function draw() {
     line(380 * width / 700, 170 * height / 550, 330 * width / 700, 220 * height / 550)
     zanaa.dibujarse()
     zanaa.moverse()
-    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 5) {
+    if (dist(mouseX, mouseY, zanaa.x, zanaa.y) < 10) {
       estado = 9
     }
 
     for (var i = 0; i < miEjercito.length; i = i + 1) {
       miEjercito[i].dibujarse()
       miEjercito[i].moverse()
-      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 5) {
+      if (dist(mouseX, mouseY, miEjercito[i].x, miEjercito[i].y) < 10) {
         estado = 9
       }
     }
     image(mihelado, 315 * width / 700, 190 * height / 550, 40, 50)
-    image(mioso, x * width / 700, y * height / 550, tam, tam)
-    if (dist(mouseX, mouseY, 330 * width / 700, 220 * height / 550) < 5) {
+    image(mioso, x - 60 / 2 * width / 700, y - 60 / 2 * height / 550, tam, tam)
+    if (dist(mouseX, mouseY, 330 * width / 700, 220 * height / 550) < 20) {
       estado = 8
     }
   }
@@ -298,7 +289,7 @@ function mousePressed() {
 function mouseDragged() {
 
   //revisa si la posición del mouse es cercana a la posicion de la comida 
-  if (dist(mouseX, mouseY, x, y) < tam / 2 + 10) {
+  if (dist(mouseX, mouseY, x, y) < tam / 2) {
 
     //actualiza la posicion del oso con la posición del mouse
     x = mouseX;
