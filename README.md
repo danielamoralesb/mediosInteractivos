@@ -12,4 +12,4 @@ Indice de los ejercicios de la clase de Daniela Morales
 10.[Juego Avance 30/oct fullscreen](https://editor.p5js.org/danielamorales/full/r1hDea5sm)
 10.1.[Juego Avance 30/oct sketch](https://editor.p5js.org/danielamorales/sketches/r1hDea5sm)
 11. [Juego casi final](https://danielamoralesb.github.io/mediosInteractivos/vdjg)
-12.[Juego Final](https://danielamoralesb.github.io/mediosInteractivos/VideoJuegoFinal)
+12.[Juego Final](https://danielamoralesb.github.io/mediosInteractivos/VJuego)
